@@ -1,8 +1,5 @@
 //https://medium.com/@bantic/hand-coding-a-color-wheel-with-canvas-78256c9d7d43
 
-
-
-
 Responder = function(top, left, timeBetweenSteps) {
   console.log('height', top)
   console.log('width', left)
