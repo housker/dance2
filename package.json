@@ -1,0 +1,19 @@
+{
+  "name": "dance2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "init.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/housker/dance2.git"
+  },
+  "author": "Adelle Housker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/housker/dance2/issues"
+  },
+  "homepage": "https://github.com/housker/dance2#readme"
+}

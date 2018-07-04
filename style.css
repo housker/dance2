@@ -1,0 +1,81 @@
+body, html{
+  height:100%;
+}
+body{
+  margin: 0px;
+  background-color:black;
+  font-size: 18px;
+}
+body, a:link, a:visited, a:active{
+  color: lightblue;
+}
+.title, .addDancerButton{
+  padding:5px 12px;
+  float:right;
+}
+.topbar{
+  height:32px;
+  background-color: #555;
+}
+.title{
+  background-color: #777;
+}
+.dancer{
+  position:absolute;
+}
+.blinkyDancer{
+  border:10px solid red;
+  border-radius:10px;
+  z-index: -1;
+}
+.star{
+  height: 15px;
+  width: 15px
+}
+div#music_player{
+  width: 300px;
+  height: 70px;
+  background: #000;
+  padding: 5px;
+  margin: 50px auto;
+}
+div#music_player div#audio_box{
+  width: 300px;
+  background: #000;
+  float: left;
+}
+div#music_player canvas{
+  width: 300px;
+  height: 34px;
+  background: #002D3C;
+  float: left;
+}
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid;
+}
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid;
+}
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-right: 50px solid;
+  border-bottom: 25px solid transparent;
+}
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-left: 50px solid;
+  border-bottom: 25px solid transparent;
+}
+

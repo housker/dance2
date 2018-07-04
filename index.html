@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dance Party</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <div id="music_player">
+      <div id="audio_box" src="./rutgermuller.wav"></div>
+      <canvas id="analyser_render"></canvas>
+    </div>
+    <div class="topbar">
+      <!-- <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">blinky dancer</a> -->
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="Responder">responsive dancer</a>
+    </div>
+    <script src="init.js"></script>
+    <script src="music.js"></script>
+    <script src="shader.js"></script>
+    <script src="responder.js"></script>
+  </body>
+</html>
