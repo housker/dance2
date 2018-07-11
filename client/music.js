@@ -1,7 +1,5 @@
 //https://www.youtube.com/watch?v=IBHpSkGZtNM
 //https://24ways.org/2013/make-your-browser-dance/#author
-//https://freesound.org/search/?q=spells&f=&s=score+desc&advanced=0&g=1
-//https://archive.org/details/HarryPotter-hedwigTheme
 
 var audio = new Audio();
 audio.crossOrigin = 'anonymous';
@@ -13,7 +11,7 @@ audio.autoplay = false;
 var canvas, ctx, source, context, analyser, fbc_array, bars, bar_x, bar_width, bar_height;
 
 window.addEventListener('load', initMusicPlayer, false);
-//could I do the same thing with doc.ready?
+
 function initMusicPlayer() {
   document.getElementById('audio_box').appendChild(audio);
   var myHeader = new Headers();
@@ -50,38 +48,3 @@ function frameLooper() {
 }
 
 window.requestAnimationFrame(frameLooper)
-
-
-
-// var audioFile = './rutgermuller.wav'
-
-// // function loadSound() {
-// //   //set audio file url
-// //   var audioFileUrl = 'https://freesound.org/s/51251/';
-// //   console.log(audioFileUrl)
-// //   //create new request
-// //   var request = new XMLHttpRequest();
-// //   request.open("GET", audioFileUrl, true);
-// //   request.responseType = "arraybuffer";
-
-// //   request.onload = function() {
-// //     //take from http request and decode into buffer
-// //     audioContext.decodeAudioData(request.response, function(buffer) {
-// //         audioBuffer = buffer;
-// //        });
-// //     }
-// //   request.send();
-// // }
-// // loadSound()
-
-// function createAnalyser(source) {
-//   //create analyser node
-//   analyser = audioContext.createAnalyser();
-//   //connect to source
-//   source.connect(analyser);
-//   //pipe to speakers
-//   analyser.connect(audioContext.destination);
-// }
-
-// var myAnalyser = new createAnalyser(audioFile);
-// console.log(myAnalyser)

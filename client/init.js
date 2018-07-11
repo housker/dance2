@@ -8,25 +8,10 @@
  $(document).ready(function() {
   window.dancers = [];
   window.responders = [];
-  console.log('height', $("body").height())
-  console.log('width', $("body").width())
 
   $('.addDancerButton').on('click', function(event) {
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
     var dancerMakerFunction = window[dancerMakerFunctionName];
-
-//Drop-down menu
-/*
-<a class="dropdown-toggle">..</a>
-*/
-// var main = function() {
-//   $('.dropdown-toggle').click(function() {
-//     $('.dropdown-menu').toggle();
-//   });
-// }
-// var oldTimeBetweenSteps = Math.random() * 1000;
-// var newTimeBetweenSteps =
-
     var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
@@ -44,8 +29,6 @@
     }
   });
 });
-
-
 
 //Dancer
 var Dancer = function(top, left, timeBetweenSteps) {
