@@ -3,7 +3,7 @@
 
 var audio = new Audio();
 audio.crossOrigin = 'anonymous';
-audio.src = 'rutgermuller.wav';
+audio.src = './downloads/viennese.mp3';
 audio.controls = true;
 audio.loop = true;
 audio.autoplay = false;
@@ -36,6 +36,13 @@ function frameLooper() {
     bar_x = i * 3;
     bar_width = 2;
     bar_height = -(fbc_array[i] / 2);
+    // if(Math.random() < 0.01) {
+    //   console.log('fbc_array ', fbc_array[i]);
+    // }
+    let red = fbc_array[i] * Math.random() % 255;
+    let green = fbc_array[i] * 0.5 % 255;;
+    let blue = fbc_array[i] * 0.9 % 255;
+    ctx.fillStyle = `rgb(${red}, ${green}, ${blue})`;
     ctx.fillRect(bar_x, canvas.height, bar_width, bar_height);
     //dancer opacity
     if(window.responders[i]) {

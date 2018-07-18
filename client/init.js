@@ -9,6 +9,15 @@
   window.dancers = [];
   window.responders = [];
 
+  fetch('/downloads')
+  .then(res => res.json())
+  .then(jres => jres.forEach(file => {
+    let a = document.createElement("a");
+    a.innerText = file;
+    a.addEventListener('click', handleClick);
+    document.getElementById('files').append(a);
+  }))
+
   $('.addDancerButton').on('click', function(event) {
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
     var dancerMakerFunction = window[dancerMakerFunctionName];
@@ -29,6 +38,11 @@
     }
   });
 });
+
+ function handleClick(e) {
+  let song = e.target.innerText;
+  audio.src = `./downloads/${song}`;
+ }
 
 //Dancer
 var Dancer = function(top, left, timeBetweenSteps) {
